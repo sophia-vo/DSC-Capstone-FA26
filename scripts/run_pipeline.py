@@ -112,13 +112,15 @@ def main() -> None:
     target = clean_dataframe(df[[target_column]])[target_column]
     result: LinearModelResult = train_linear_model(features, target)
 
-    logger.info("Trained linear model", intercept=result.intercept)
+    # logger.info("Trained linear model", intercept=result.intercept)
+    logger.info("Trained linear model, intercept={}", result.intercept)
     for name, coef in zip(
         result.feature_names,
         result.coefficients,
         strict=True,
     ):
-        logger.info("Coefficient", feature=name, value=coef)
+        # logger.info("Coefficient", feature=name, value=coef)
+        logger.info("Coefficient: {} = {}", name, coef)
 
 
 if __name__ == "__main__":

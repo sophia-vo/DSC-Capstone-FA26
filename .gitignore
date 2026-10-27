@@ -60,3 +60,6 @@ docs/_site/
 # OS files
 .DS_Store
 Thumbs.db
+
+runs/
+logs/

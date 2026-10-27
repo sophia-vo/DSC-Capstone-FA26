@@ -6,12 +6,14 @@ authors = [
     {name = "UCSD Intuit DS Capstone Team"}
 ]
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "numpy (>=1.26,<2.0)",
     "pandas (>=2.2,<3.0)",
     "matplotlib (>=3.8,<4.0)",
-    "loguru (>=0.7,<0.8)"
+    "loguru (>=0.7,<0.8)",
+    "inspect-ai (==0.3.285)",
+    "openai (>=3.39.0,<4.0.0)"
 ]
 
 
